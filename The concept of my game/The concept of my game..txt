@@ -1,0 +1,242 @@
+The concept
+
+You play as a mysterious creature that has three forms, and each form has a completely different ability.
+
+But here's the twist:
+
+You cannot use all abilities at once.
+
+You have to constantly change your form at the right moment to overcome obstacles.
+
+The three forms
+
+ Swift Form
+
+Very fast
+Can double jump
+Can pass through small gaps
+Weak
+
+ Titan Form
+
+Very slow
+Extremely strong
+Can break walls
+Can activate heavy pressure plates
+Cannot jump high
+
+ Sky Form
+
+Can fly/glide
+Can reach high areas
+Can activate things from the air
+Very fragile
+ The main mechanic
+
+Imagine a level like this:
+
+             🔑
+              |
+          ─────────
+             ↑
+          🦅 Sky
+             |
+     ┌───────┴───────┐
+     │               │
+    🧱              🕳️
+  WALL             HOLE
+     │               │
+     └───────┬───────┘
+             |
+          ⚖️ SWITCH
+             |
+           🚪 EXIT
+
+You need to:
+
+Titan → smash the wall 
+↓
+Swift → run through the hole 
+↓
+Sky → fly up and grab the key 
+↓
+Titan → activate the heavy switch 
+↓
+ Escape
+
+So the player isn't just asking:
+
+"Where do I go?"
+
+They're asking:
+
+"Which form should I be right now?"
+
+That's your game's identity.
+
+ Add one mechanic that makes it competition-worthy
+Momentum Shifting
+
+This is the feature I'd use to make your game stand out.
+
+When you transform, you keep your momentum.
+
+For example:
+
+ Swift form
+→ run toward a gap
+→ transform into 🦅 Sky form while moving
+→ launch yourself across the gap.
+
+Or:
+
+ Swift
+→ run toward a cracked wall
+→  Titan
+→ smash through it with your momentum.
+
+Now transformation becomes part of movement, not just a menu.
+
+That gives you some really satisfying gameplay moments.
+
+ Add an enemy: The Null
+
+Instead of having lots of enemies, have one interesting enemy.
+
+The Null
+
+A creature that copies your current form.
+
+If you're:
+
+ Swift → Null becomes fast.
+
+ Titan → Null becomes strong.
+
+ Sky → Null can fly.
+
+So you have to think strategically.
+
+For example:
+
+"If I transform into Titan, the enemy becomes Titan too... so maybe I should transform into Sky and escape instead."
+
+This creates another layer of strategy without requiring complicated enemy AI.
+
+ Story
+
+Keep the story simple enough that you can explain it easily.
+
+The world
+
+Your character is the last Shifter, a creature capable of changing its physical form.
+
+An ancient machine called the Null Engine is draining the world of its energy.
+
+You must reach the engine and destroy it.
+
+But the engine has divided the world into three environments:
+
+ Zone 1 — The Overgrowth
+
+Introduces the forms.
+
+ Zone 2 — The Ruins
+
+More complicated puzzles.
+
+ Zone 3 — The Machine
+
+Combines everything and introduces the Null.
+
+🔴 Final Zone — The Core
+
+A short boss/puzzle sequence where you have to switch forms rapidly.
+
+You don't need a giant story.
+
+The gameplay is the story.
+
+🧠 Why this is a good competition project
+
+Judges can understand the entire game from one sentence:
+
+"It's a puzzle-platformer where you switch between three forms, each with different abilities, to overcome obstacles."
+
+Then you demonstrate it.
+
+That's MUCH better than spending five minutes explaining complicated lore.
+
+And you can explain your design choices:
+
+Problem
+
+"Different obstacles require different abilities."
+
+Solution
+
+"The player can instantly transform between three forms."
+
+Challenge
+
+"The player has to choose the correct form and timing."
+
+Unique mechanic
+
+"Momentum is preserved during transformations, allowing advanced movement combinations."
+
+That's a very clean presentation.
+
+🎮 Controls
+
+Keep them extremely simple.
+
+WASD → Move
+Space → Jump
+1 → Swift
+2 → Titan
+3 → Sky
+E → Interact
+
+That's basically it.
+
+5–8 small levels.
+
+I primarily need:
+
+Player controller
+3 player forms
+Form switching
+Different movement properties
+Breakable walls
+Pressure plates
+Doors
+Moving platforms
+A few hazards
+One enemy
+Level transitions
+Basic UI
+Simple sound effects
+Final challenge
+
+the environment will be visually impressive with relatively simple geometry.
+
+Give the player a Shifter Meter.
+
+Every transformation consumes energy.
+
+SHIFTER ENERGY
+████████████░░ 80%
+
+Energy slowly regenerates.
+
+Now the player can't simply spam:
+
+1 → 2 → 3 → 1 → 2 → 3
+
+They have to decide:
+
+"Is this the right moment to transform?"
+
+That makes the mechanic meaningful.
+

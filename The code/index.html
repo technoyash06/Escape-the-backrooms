@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiftbreaker — The Last Shifter</title>
+  <link rel="stylesheet" href="styles/shiftbreaker.css">
+</head>
+<body>
+  <main id="frame">
+    <canvas id="game" width="1280" height="720" aria-label="Shiftbreaker playable game"></canvas>
+
+    <div id="start">
+      <section class="panel">
+        <h1>SHIFTBREAKER</h1>
+        <h2>A MOMENTUM PUZZLE PLATFORMER</h2>
+        <p>
+          You are the last Shifter. Change form at the right moment, preserve
+          your speed, recover the Core Key, and escape the Null Engine.
+        </p>
+
+        <div class="forms">
+          <div class="form"><b>1 · SWIFT</b><br>Fast, dash and double jump.</div>
+          <div class="form"><b>2 · TITAN</b><br>Break cracked walls and hold heavy plates.</div>
+          <div class="form"><b>3 · SKY</b><br>Glide, fly upward and cross the void.</div>
+        </div>
+
+        <p>
+          <kbd>A</kbd> <kbd>D</kbd> move &nbsp;
+          <kbd>W</kbd> / <kbd>SPACE</kbd> jump / fly &nbsp;
+          <kbd>SHIFT</kbd> dash &nbsp; <kbd>E</kbd> special move &nbsp;
+          <kbd>F</kbd> talk &nbsp; <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> shift
+        </p>
+
+        <button id="play" disabled>LOADING ART…</button>
+      </section>
+    </div>
+  </main>
+
+  <!-- Load order matters: art data, then level data, then the game itself. -->
+  <script src="scripts/shiftbreaker-assets.js"></script>
+  <script src="scripts/shiftbreaker-data.js"></script>
+  <script src="scripts/shiftbreaker-game.js"></script>
+</body>
+</html>
